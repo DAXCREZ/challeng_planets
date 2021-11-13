@@ -1,0 +1,60 @@
+.body{
+    height: 100vh;
+    background: url("../../../assets/home/background-home-desktop.jpg") no-repeat center fixed ;
+    width: 100%;
+}
+
+.main__info__container{
+    display: flex;
+    flex-direction: row;
+    /*border: 1px solid #ffffff;*/
+    height: 70%;
+}
+
+.text__info__container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 50%;
+    /*border: 1px solid #ffffff;*/
+    justify-content: flex-end;
+}
+
+.text__info{
+    display: flex;
+    flex-direction: column;
+    width: 74%;
+    /*border: 1px solid white;*/
+}
+
+.text__info__container h3{
+    font-family: 'Barlow Condensed', regular;
+    color: #ffffff;
+    font-size: 28px;
+    margin: 0;
+}
+
+.text__info__container h1{
+    font-family: "Bellefair", regular;
+    color: #ffffff;
+    font-size: 150px;
+    margin: 0;
+
+}
+.text__info__container p{
+    text-align: justify;
+    /*font-family: 'Barlow Condensed', regular;*/
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 30px;
+    /*letter-spacing: 2px;*/
+}
+
+.explorer__button__container{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    justify-content: flex-end;
+}
+

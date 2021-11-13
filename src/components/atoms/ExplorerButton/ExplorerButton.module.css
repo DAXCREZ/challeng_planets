@@ -1,0 +1,36 @@
+.body{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 274px;
+    height: 274px;
+    background: white;
+    border-radius: 100%;
+    cursor: pointer;
+
+}
+
+.body::after{
+    content: "";
+    position: absolute;
+    width: 274px;
+    height: 274px;
+    border-radius: 100%;
+    background: transparent;
+    border: 50px solid grey;
+    transition: 1s;
+    opacity: 0;
+}
+
+.body:hover::after{
+    opacity: 0.8;
+    transition: 1s;
+}
+
+
+.text__title{
+    font-family: "Bellefair", regular, sans-serif;
+    font-size: 32px;
+    color: #0B0D17;
+}
