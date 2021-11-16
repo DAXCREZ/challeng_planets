@@ -1,0 +1,53 @@
+.body{
+    height: calc(100vh);
+    background: url("../../../assets/destination/background-destination-desktop.jpg") no-repeat center fixed ;
+    width: 100%;
+}
+
+.content{
+    display: flex;
+    border: 1px solid #ffffff;
+    height: 95%;
+}
+
+.content__left{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 50%;
+    border: 1px solid #ffffff;
+}
+
+.content__left__title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.number{
+    font-family: 'Barlow Condensed';
+    color: grey;
+    font-weight: 600;
+    font-size: 28px;
+    margin-right: 20px;
+}
+
+.title{
+    font-family: 'Barlow Condensed', regular;
+    color: #ffffff;
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.content__left__maps{
+    display: flex;
+    justify-content: right;
+}
+
+.content__right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

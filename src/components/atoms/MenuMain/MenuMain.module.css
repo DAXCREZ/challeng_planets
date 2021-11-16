@@ -43,6 +43,7 @@
 .link{
     list-style: none;
     height: 100%;
+    text-decoration: none;
 }
 
 .filter{
@@ -96,6 +97,7 @@
     letter-spacing: 2px;
     font-size: 14px;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .option_number{
@@ -106,4 +108,5 @@
     margin-right: 5px;
     font-weight: bold;
     text-decoration: none;
+    cursor: pointer;
 }

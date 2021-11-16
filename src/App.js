@@ -9,7 +9,7 @@ import MenuMain from "./components/atoms/MenuMain";
 
 function App() {
     return (
-        <div style={{display:"flex", flexDirection:"column", justifyContente:"center", alignItems:"center"}}>
+        <div style={{display:"flex", flexDirection:"column"}}>
             <MenuMain/>
             <div>
                 <Routes>
