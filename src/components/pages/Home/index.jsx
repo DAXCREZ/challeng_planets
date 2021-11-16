@@ -1,12 +1,10 @@
 import React from 'react';
-import MenuMain from "../../atoms/MenuMain";
 import HomeStyle from './HomeTemplate.module.css';
 import ExplorerButton from "../../atoms/ExplorerButton";
 
 const HomeTemplate = () => {
     return (
         <div className={HomeStyle.body}>
-            <MenuMain/>
             <div className={HomeStyle.main__info__container}>
                 <div className={HomeStyle.text__info__container}>
                     <div className={HomeStyle.text__info}>

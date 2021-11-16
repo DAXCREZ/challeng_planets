@@ -1,10 +1,11 @@
 .body{
     width: 100%;
     display: flex;
+    background: transparent;
 }
 
 .browser{
-    position: relative;
+    position: fixed;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -35,9 +36,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(15px);
     background-color: rgba(243,243,243,0.1);
+}
+
+.link{
+    list-style: none;
+    height: 100%;
 }
 
 .filter{
@@ -45,12 +50,30 @@
 }
 
 .list__messy{
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     list-style: none;
     margin: 0 20px;
-    height: 95%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.list__messy::after{
+    content: "";
+    background: rgba(255,255,255);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    opacity: 0;
+    transition: 1s;
+}
+
+.list__messy:hover::after{
+    opacity: 1;
+    transition: 1s;
 }
 
 .list__messy__active{
@@ -63,15 +86,16 @@
     border-bottom: 3px solid rgba(255,255,255,1);
 }
 
-.list__messy:hover{
-    border-bottom: 3px solid rgba(255,255,255,.5);
-}
+/*.list__messy:hover{*/
+/*    border-bottom: 3px solid rgba(255,255,255,.5);*/
+/*}*/
 
 .option{
     color: #fff;
     font-family: 'Barlow Condensed', sans-serif;
     letter-spacing: 2px;
     font-size: 14px;
+    text-decoration: none;
 }
 
 .option_number{
@@ -81,4 +105,5 @@
     letter-spacing: 2px;
     margin-right: 5px;
     font-weight: bold;
+    text-decoration: none;
 }
